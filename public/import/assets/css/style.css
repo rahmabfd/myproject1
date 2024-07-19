@@ -10,10 +10,16 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
-  color: #444444;
+  background: #fefefe;
+  font-family: Akagi;
+  font-size: 12px;
+  color: #555;
+  overflow-x: hidden;
 }
-
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
 a {
   text-decoration: none;
   color: black;
@@ -32,7 +38,10 @@ h5,
 h6 {
   font-family: "Raleway", sans-serif;
 }
-
+div {
+  display: block;
+  unicode-bidi: isolate;
+}
 
 /*--------------------------------------------------------------
 # Back to top button
@@ -787,32 +796,220 @@ h6 {
   font-size: 14px;
 }
 
-/*--------------------------------------------------------------
-# About Us
---------------------------------------------------------------*/
-.about .content h3 {
-  font-weight: 700;
-  font-size: 28px;
+/* Search section -- start */
+#HomeSearchSection {
+ 
+  background: #000052;
+  color: white;
+ 
+  position: relative;
 }
 
-.about .content ul {
-  list-style: none;
-  padding: 0;
+#HomeSearchSection > div {
+  background: linear-gradient(0deg, rgba(0,0,0,0.1), transparent);
 }
 
-.about .content ul li {
+#HomeSearchSection .wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 200px 0;
+}
+
+#HomeSearchSection .SectionTitle {
+  font-family: "Akagi";
+  font-size: 3rem;
+  font-weight: 800;
+  max-width: 40%;
+  width: 100%;
+  color: #ED0101;
+  text-transform: uppercase;
+  margin-left: 7%;
+}
+
+
+
+#HomeSearchSection .SectionTitle span {
+    color: #192452;
+}
+* {
+    font-smooth: always;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.01);
+    text-rendering: optimizeLegibility;
+}
+
+
+#HomeSearchSection .SectionContent {
+  font-family: "Akagi";
+  font-size: 45px;
+  font-weight: 800;
+  max-width: 360px;
+  width: 100%;
+  color: #fff;
+}
+
+#HomeSearchSection .SectionTitle span {
+  color: #0b4f9e;
+}
+
+#HomeSearchInput {
+  background: url("images/search_section/search_btn.png") #fff no-repeat calc(100% - 10px) 50%;
+  border: 1px solid #ddd;
+  font-size: 22px;
+  font-family: Akagi, "Helvetica Neue", Helvetica, Arial, "sans-serif"!important;
+  font-weight: bold;
+  color: #000;
+
+  max-width: 360px;
+  box-sizing: border-box;
+  padding: 8px 10px;
+}
+
+#HomeSearchInput.searching {
+  background-image: url("images/search_section/ajax-loader.gif");
+}
+
+#HomeSearchResults {
+  background: #fff;
+  padding: 2px;
+  margin-top: 10px;
+  position: absolute;
+  z-index: 9;
+  max-height: 300px;
+  overflow-y: auto;
+  width: 100%;
+}
+
+#HomeSearchResults:empty {
+  display: none;
+}
+
+#HomeSearchResults .search-no-results {
+  color: #6c6c6c;
+  font-size: 18px;
+  text-align: center;
+}
+
+#HomeSearchResults .search-more-results {
+  background: #0b4f9e;
+  padding: 10px;
+  font-size: 18px;
+  font-family: Roboto;
+  text-align: center;
+  cursor: pointer;
+}
+
+#HomeSearchResults .search-more-results:hover {
+  background: #0b61df;
+}
+
+#HomeSearchResults .search-result-item {
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#HomeSearchResults .search-result-thumb {
+  width: 100px;
+  max-height: 80px;
+  margin-right: 10px;
+}
+
+#HomeSearchResults .search-result-item-content {
+  flex: 1;
+}
+
+#HomeSearchResults .search-result-item-title {
+  color: #29950e;
+  font-size: 18px;
+}
+
+#HomeSearchResults .search-result-item-description {
+  color: #6c6c6c;
+  font-size: 12px;
+}
+
+#HomeSearchResults .search-result-item:hover {
+  background: #f4f4f4;
+}
+
+#HomeSearchResults .search-result-item + .search-result-item {
+  border-top: 1px solid #d8d8d8;
+  padding-top: 10px;
   padding-bottom: 10px;
 }
 
-.about .content ul i {
-  font-size: 20px;
-  padding-right: 4px;
-  color: #0b4f9ee6;
+
+ 
+/* Search section -- end */
+
+/* Home formations -- start */
+#homeFormationGrid .column {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
-.about .content p:last-child {
-  margin-bottom: 0;
+.home-formation-title {
+  font-size: 24px;
+  color: #f00340;
 }
+
+.home-formation li {
+  list-style: url('images/list_bullet.png');
+}
+
+.home-formation li + li {
+  margin-top: 10px;
+}
+
+.home-formation li a {
+  color: #666666;
+  font-size: 18px;
+}
+
+.home-formation li:hover a {
+  color: #1e4daa;
+}
+/* Home formations -- end */
+
+/* Home la recherche -- start */
+.home-la-recherche .home-title {
+  margin-bottom: 25px;
+}
+
+.home-la-recherche-content {
+  font-size: 14px;
+  color: #666666;
+  font-family: "Roboto";
+  text-align: justify;
+  margin-top: 0;
+}
+/* Home la recherche -- end */
+
+/* Home research structures -- start */
+.home-research-structures .home-title {
+  margin-bottom: 25px;
+}
+
+.home-research-structures a {
+  display: block;
+  background: url('images/buttons/button_bullet_right.png') no-repeat 17px center #29950e;
+  font-size: 14px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 17px 10px 34px;
+}
+
+.home-research-structures a:hover {
+  background-color: #0b4f9e;
+}
+
+.home-research-structures a + a {
+  margin-top: 13px;
+}
+
+/* Home research structures -- end */
 
 /*--------------------------------------------------------------
 # Why Us
@@ -864,28 +1061,30 @@ h6 {
 -------*/
 /* Home statistics -- start */
 
-.institut_detailBG{
+.home-statistics .home-title {
+  color: #fff;
+  text-transform: uppercase;
+}
+.txt-center {
+  text-align: center;
+}
+.home-title {
+  font-family: "Akagi", sans-serif;
+  font-size: 32px;
+  color: #0b4f9e;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
 
-  background: url(import/assets/img/bg-stat.png) #192452;
+.home-statistics{
   background-size: cover;
   color: white;
   padding: 5rem 0 12rem;
   position: relative;
-  margin-top: 10px;
-}
-.home-statistics .home-title {
-  color: #fff;
-  text-transform: uppercase;
-  margin-bottom: 8rem;
+  margin-top: 40px;
+
 }
 
-/*
-.institut_detailBG{
-  background: url("images/bg_stat.jpg") no-repeat;
-  background-size: cover;
-  padding: 70px 0;
-}
-*/
 
 .institut_detailBG h2{
   font-size: 3.6rem;
@@ -934,12 +1133,10 @@ h6 {
 }
 
 .home-statistics-item__students .home-statistics-icon{
-  background: url(import\assets\img\stat_students.png) no-repeat;
   height: 71px;
 }
 
 .home-statistics-item__teachers .home-statistics-icon{
-  background: url(import/assets/img/stat_teachers.png) no-repeat;
   height: 71px;
 }
 

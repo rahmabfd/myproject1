@@ -231,40 +231,83 @@
       </div>
     </section><!-- End Featured Services Section -->
 
-    <!-- ======= About Us Section ======= -->
-    <section id="about" class="about">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>About Us</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+    <!-- ======= home search section ======= -->
+    <div data-site-block="true" data-site-block-id="HomeSearchSection" data-site-block-title="formation">
+            <div id="HomeSearchSection"  >
+    <div>
+        <div class="wrapper">
+            <div class="SectionTitle"><span>Trouvez la bonne</span> formation pour vous</div>
+            
+            <div class="SectionContent" style="position: relative">
+                <input id="HomeSearchInput" placeholder="Que cherchez vous ?">
+                <div id="HomeSearchResults"></div>
+                
+               
+            </div>
         </div>
+    </div>
+</div>
 
-        <div class="row">
-          <div class="col-lg-6 order-1 order-lg-2">
-            <img src="{{ asset('import/assets/img/about.jpg')}}" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
-            <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
-            <p class="fst-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
-            </p>
-            <ul>
-              <li><i class="bi bi-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-              <li><i class="bi bi-check-circled"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-              <li><i class="bi bi-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
-            </ul>
-            <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum
-            </p>
-          </div>
-        </div>
+<script>
+    $(document).ready(function() {
+        $('#HomeSearchInput').on('keyup', function() {
+            var searchtext = $(this).val().trim();
+            
+            var resultsList = $('#HomeSearchResults');
+            resultsList.empty();
 
-      </div>
-    </section><!-- End About Us Section -->
+            if (searchtext.length > 0) {
+                $.ajax({
+                    type: "POST",
+                    url: "https://enim.rnu.tn/fra/search",
+                    data: { searchtext: searchtext },
+                    dataType: "json",
+                    beforeSend: function () {
+                        $('#HomeSearchInput').addClass('searching');
+                    },
+                    success: function (response) {
+                        $('#HomeSearchInput').removeClass('searching');
+                        
+                        if (response.total_matches == 0) {
+                            resultsList.html('<div class="search-no-results">Pas de données disponibles!</div>');
+                        } else {
+                            for (item of response.matches) {
+                                resultsList.append("<a href='"+item.link+"' class='search-result-item'>"+
+                                    ( item['thumb'] ? "<img src='https://enim.rnu.tn/useruploads/articles_thumbs/"+item.thumb+"' class='search-result-thumb' />" : "" )+
+                                    "<div class='search-result-item-content'>"+
+                                    "<div class='search-result-item-title'>"+item['title_fra']+"</div>"+
+                                    "<div class='search-result-item-description'>"+item['short_description']+"</div>"+
+                                    "</div>"+
+                                    "</a>");
+                            }
+                            
+                            if (response.total_matches > response.matches.length) {
+                                resultsList.append('<div class="search-more-results">Plus de résultats</div>');
+                            }
+                        }
+                    }
+                });
+            }
+        });
+        
+        $('#HomeSearchInput').on('focus', function () {
+            if( $('#HomeSearchResults').html().length > 0 )
+               $('#HomeSearchResults').show(); 
+        });
+        
+        $('#HomeSearchInput').on('focusout', function () {
+           setTimeout(function() {
+               $('#HomeSearchResults').hide(); 
+           }, 100);
+        });
+        
+        $('body').on('mouseup', '.search-more-results', function() {
+            $('input[name=searchtext]').val($('#HomeSearchInput').val()).closest('form').submit();
+        });
+    });
+</script>        </div>
+
+<!-- End home search Section -->
 
     <!-- ======= Why Us Section ======= -->
     <section id="why-us" class="why-us">
@@ -319,16 +362,14 @@
 
     <!-- ======= statistics Section ======= -->
     
-    <section class="institut_detailBG" data-site-block="true" data-site-block-id="statistics" data-site-block-title="Statistiques">
+    <div class="home-box institut_detailBG" data-site-block="true" data-site-block-id="statistics" data-site-block-title="Statistiques">
     <div class="wrapper">
-   
-
-        <div class="home-statistics" data-sr-id="2" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; ">
+        <div class="home-statistics"   style="background-image: url(import/assets/img/bg-stat.png)"  data-sr-id="2" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; ">
     <h2 class="home-title">IPEIGB en chiffres</h2>
 
     <div class="home-statistics-items flex-column-on-mobile flex-column-gap">
         <div class="home-statistics-item home-statistics-item__students">
-            <div class="home-statistics-icon"></div>
+            <div class="home-statistics-icon" style="background-image: url(import/assets/img/stat_students.png)"></div>
             <div class="home-statistics-value">1700</div>
             <div class="home-statistics-label">
                 étudiants                <span>l’année universitaire  2021/2022</span>
@@ -336,37 +377,19 @@
         </div>
         
         <div class="home-statistics-item home-statistics-item__teachers">
-            <div class="home-statistics-icon"></div>
+            <div class="home-statistics-icon" style="background-image: url(import/assets/img/stat_teachers.png)"></div>
             <div class="home-statistics-value">160</div>
             <div class="home-statistics-label">
                 enseignants                <span>l’année universitaire  2021/2022</span>
             </div>
         </div>
         
-      
+       
     </div>
 </div>
-<script>
-    ScrollReveal().reveal('.home-statistics', {
-        animation: false,
-        beforeReveal: function (domEl) {
-            $(domEl).show();
-            
-            $('.home-statistics-value').each(function () {
-                $(this).prop('Counter',0).animate({
-                    Counter: $(this).text()
-                }, {
-                    duration: 4000,
-                    easing: 'swing',
-                    step: function (now) {
-                        $(this).text(Math.ceil(now));
-                    }
-                });
-            });
-        }
-    }, 300);
-</script>    </div>
-  </section>
+
+   </div>
+</div>
 
     
     <!-- ======= Team Section ======= -->
