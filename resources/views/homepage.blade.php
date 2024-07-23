@@ -233,15 +233,25 @@
 
     <!-- ======= home search section ======= -->
     <div data-site-block="true" data-site-block-id="HomeSearchSection" data-site-block-title="formation">
-            <div id="HomeSearchSection"  >
+            <div id="HomeSearchSection" style="background-image: url(import/assets/img/bg3.jpg)" >
     <div>
         <div class="wrapper">
-            <div class="SectionTitle"><span>Trouvez la bonne</span> formation pour vous</div>
+            <div class="SectionTitle"><span>Découvrir</span> nos départements</div>
             
             <div class="SectionContent" style="position: relative">
                 <input id="HomeSearchInput" placeholder="Que cherchez vous ?">
                 <div id="HomeSearchResults"></div>
-                
+                <div id="HomeDiplomas">
+                                        <a href="javascript:void(0)" title="Ingénieur National" target="_self" class="ease0-5">
+                        Physique-Chimie                   </a>
+                                        <a href="javascript:void(0)" title="Mastère" target="_self" class="ease0-5">
+                       Math-Physique                   </a>
+                                        <a href="javascript:void(0)" title="Doctorat" target="_self" class="ease0-5">
+                       Technologie                   </a>
+                               
+                                    <a href="javascript:void(0)" title="Doctorat" target="_self" class="ease0-5">
+                       Biologie                  </a>
+                                    </div>
                
             </div>
         </div>
@@ -310,51 +320,50 @@
 <!-- End home search Section -->
 
     <!-- ======= Why Us Section ======= -->
-    <section id="why-us" class="why-us">
-      <div class="container">
+    <div class="wrapper">
+            <div class="banners_items">
+                                    <div class="bannerHome fiche" style="background-image: url(import/assets/img/document-administratifs.jpg)" data-site-block="true" data-site-block-id="fiche" data-site-block-title="Banniere Fiche">
+                        <div class="bannItem" style="background-image: url(import/assets/img/mastere.jpg)" >
+                            <h2>
+                                <a href="https://ipeig.rnu.tn/fra/fiche">
+                                    <i class="graduation cap icon"></i>
+                                    Fiche de renseignements et Pré-inscription en ligne                                </a>
+                            </h2>
+                        </div>
+                    </div>
+                
 
-        <div class="row no-gutters">
-
-          <div class="col-lg-4 col-md-6 content-item">
-            <span>01</span>
-            <h4>Lorem Ipsum</h4>
-            <p>Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et consectetur ducimus vero placeat</p>
-          </div>
-
-          <div class="col-lg-4 col-md-6 content-item">
-            <span>02</span>
-            <h4>Repellat Nihil</h4>
-            <p>Dolorem est fugiat occaecati voluptate velit esse. Dicta veritatis dolor quod et vel dire leno para dest</p>
-          </div>
-
-          <div class="col-lg-4 col-md-6 content-item">
-            <span>03</span>
-            <h4> Ad ad velit qui</h4>
-            <p>Molestiae officiis omnis illo asperiores. Aut doloribus vitae sunt debitis quo vel nam quis</p>
-          </div>
-
-          <div class="col-lg-4 col-md-6 content-item">
-            <span>04</span>
-            <h4>Repellendus molestiae</h4>
-            <p>Inventore quo sint a sint rerum. Distinctio blanditiis deserunt quod soluta quod nam mider lando casa</p>
-          </div>
-
-          <div class="col-lg-4 col-md-6 content-item">
-            <span>05</span>
-            <h4>Sapiente Magnam</h4>
-            <p>Vitae dolorem in deleniti ipsum omnis tempore voluptatem. Qui possimus est repellendus est quibusdam</p>
-          </div>
-
-          <div class="col-lg-4 col-md-6 content-item">
-            <span>06</span>
-            <h4>Facilis Impedit</h4>
-            <p>Quis eum numquam veniam ea voluptatibus voluptas. Excepturi aut nostrum repudiandae voluptatibus corporis sequi</p>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Why Us Section -->
+                                    <div class="bannerHome inscription" style="background-image: url(import/assets/img/inscription.jpg)"  data-site-block="true" data-site-block-id="inscription" data-site-block-title="Banniere Inscription">
+                        <div class="bannItem">
+                            <h2>
+                                <a href="https://www.inscription.tn/" target="_blank">
+                                    <i class="pencil icon"></i>
+                                    Inscription en ligne                                </a>
+                            </h2>
+                        </div>
+                    </div>
+                
+                                    <div class="bannerHome bibliotheque"   style="background-image: url(import/assets/img/bibliotheque.jpg)" data-site-block="true" data-site-block-id="bibliotheque" data-site-block-title="Banniere Bibliotheque">
+                        <div class="bannItem">
+                            <h2>
+                                <a href="http://www.bu.turen.tn/accueil.php" target="_blank">
+                                    <i class="book icon"></i>
+                                    Bibliothèque en ligne                                </a>
+                            </h2>
+                        </div>
+                    </div>
+                
+                                    <div class="bannerHome recherche" style="background-image: url(import/assets/img/recherche.jpg)" data-site-block="true" data-site-block-id="recherche" data-site-block-title="Banniere Recherche">
+                        <div class="bannItem">
+                            <h2>
+                                <a href="https://ipeig.rnu.tn/fra/s1270/pages/436/Organigramme-de-Formation">
+                                    <i class="lab icon"></i>
+                                    Activités de recherche                                </a>
+                            </h2>
+                        </div>
+                    </div>
+                            </div>
+        </div></div><!-- End Why Us Section -->
 
   
 
@@ -392,181 +401,146 @@
 </div>
 
     
-    <!-- ======= Team Section ======= -->
-    <section id="team" class="team section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Team</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <div class="member">
-              <img src="{{ asset('import/assets/img/team/team-1.jpg')}}" alt="">
-              <h4>Walter White</h4>
-              <span>Chief Executive Officer</span>
-              <p>
-                Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut
-              </p>
-              <div class="social">
-                <a href=""><i class="bi bi-twitter"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <div class="member">
-              <img src="{{ asset('import/assets/img/team/team-2.jpg')}}" alt="">
-              <h4>Sarah Jhinson</h4>
-              <span>Product Manager</span>
-              <p>
-                Repellat fugiat adipisci nemo illum nesciunt voluptas repellendus. In architecto rerum rerum temporibus
-              </p>
-              <div class="social">
-                <a href=""><i class="bi bi-twitter"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <div class="member">
-              <img src="{{ asset('import/assets/img/team/team-3.jpg')}}" alt="">
-              <h4>William Anderson</h4>
-              <span>CTO</span>
-              <p>
-                Voluptas necessitatibus occaecati quia. Earum totam consequuntur qui porro et laborum toro des clara
-              </p>
-              <div class="social">
-                <a href=""><i class="bi bi-twitter"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Team Section -->
+   
 
     <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container">
+    <div class="mapHome">
+                            <div>
+                                
+<div id="home_map">
 
-        <div class="section-title">
-          <h2>Contact</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
-
-        <div class="row">
-
-          <div class="col-lg-5 d-flex align-items-stretch">
-            <div class="info">
-              <div class="address">
-                <i class="bi bi-geo-alt"></i>
-                <h4>Location:</h4>
-                <p>A108 Adam Street, New York, NY 535022</p>
-              </div>
-
-              <div class="email">
-                <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
-                <p>info@example.com</p>
-              </div>
-
-              <div class="phone">
-                <i class="bi bi-phone"></i>
-                <h4>Call:</h4>
-                <p>+1 5589 55488 55s</p>
-              </div>
-
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+    <div class="map_canvas">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3237.382474088372!2d10.801481015533968!3d35.765980080174764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x130212a8e59c419b%3A0xb74332538103a08a!2sInstitut%20pr%C3%A9paratoire%20aux%20%C3%A9tudes%20d'ing%C3%A9nieurs%20de%20Monastir!5e0!3m2!1sfr!2stn!4v1649842853024!5m2!1sfr!2stn" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="wrapper position-relative">
+        <div id="map_contact_info" class="hide-on-mobile">
+            <div id="footer_weather">
+                <a class="weatherwidget-io" href="https://forecast7.com/en/34d7410d76/sfax/" data-label_1="SFAX, Tunisia" data-label_2="WEATHER" data-font="Roboto" data-icons="Climacons Animated" data-mode="Current" data-days="3" data-theme="black" data-basecolor="#fff" data-suncolor="orange" data-cloudfill="#fff" style="display: block; position: relative; height: 180px; padding: 0px; overflow: hidden; text-align: left; text-indent: -299rem;">Sfax, Tunisia<iframe id="weatherwidget-io-0" class="weatherwidget-io-frame" title="Weather Widget" scrolling="no" frameborder="0" width="100%" src="https://weatherwidget.io/w/" style="display: block; position: absolute; top: 0px; height: 180px;"></iframe></a>
+                <script>
+                    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+                </script>
             </div>
-
-          </div>
-
-          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="form-group col-md-6">
-                  <label for="name">Your Name</label>
-                  <input type="text" name="name" class="form-control" id="name" required>
-                </div>
-                <div class="form-group col-md-6 mt-3 mt-md-0">
-                  <label for="name">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email" required>
-                </div>
-              </div>
-              <div class="form-group mt-3">
-                <label for="name">Subject</label>
-                <input type="text" class="form-control" name="subject" id="subject" required>
-              </div>
-              <div class="form-group mt-3">
-                <label for="name">Message</label>
-                <textarea class="form-control" name="message" rows="10" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
-          </div>
-
         </div>
+    </div>
+</div>                            </div>
+                        </div>
+                      </div>
+                      </div>
+                      </section>
+                      </div>
+                      </div>
+                      <!-- End Contact Section -->
 
-      </div>
-    </section><!-- End Contact Section -->
-
-  </main><!-- End #main -->
+  </main>
+  </div>
+  </div>
+  </div><!-- End #main -->
 
   <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container">
-      <h3>Green</h3>
-      <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
-      <div class="social-links">
-        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-      </div>
-      <div class="copyright">
-        &copy; Copyright <strong><span>Green</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/green-free-one-page-bootstrap-template/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
+  <footer class="footer" role="contentinfo">
+
+    <div class="mrg150">
+        <div class="responsive-box">
+
+            <section id="block-eprims" class="block block-block-content block-block-contentded7fc6c-b108-431a-8e89-17b085e58803 clearfix">
+
+                <div class="logo_footer">
+                    <img src="import/assets/img/logo2.jpeg" alt="Institut préparatoire aux études d'ingénieur de Gabès">
+                </div>
+
+                <h2 class="block-title">Institut préparatoire aux études d'ingénieur de Gabès</h2>
+
+                <div class="field field--name-body field--type-text-with-summary field--label-hidden field--item">
+                    <div>Av. Omar Ibn El Khattab, Zrig  - 6072 Gabès  - 6072 Tunisie</div>
+                    <div><span>T.</span> 75 399 939</div>
+                    <div><span>F.</span> 75 399 925</div>
+                </div>
+
+            </section>
+
+
+                            <ul>
+
+                    <li class="parent">
+                        <a href="javascripts:void(0)" class="firstWord couleur_eprims">
+                            <span class="highlightedWord">Institut </span> </a>
+                    </li>
+                                            <li><a href="fra/pages/158/Présentation">Présentation</a></li>
+                                            <li><a href="fra/pages/159/Organigramme-de-l-institut">Organigramme</a></li>
+                                            <li><a href="fra/pages/160/En-chiffres">En Chiffres</a></li>
+                                            <li><a href="fra/pages/161/Conseil-scientifique">Conseil scientifique</a></li>
+                                            <li><a href="fra/enseignants">Enseignants</a></li>
+                                            <li><a href="fra/visite-virtuelle/">Visite virtuelle</a></li>
+                                            <li><a href="fra/galerie/">Galerie de photos</a></li>
+                    
+                </ul>
+                            <ul>
+
+                    <li class="parent">
+                        <a href="javascripts:void(0)" class="firstWord couleur_eprims">
+                            <span class="highlightedWord">Formation</span> </a>
+                    </li>
+                                            <li><a href="fra/pages/163/Conditions-d’admission">Conditions d’admission  </a></li>
+                                            <li><a href="fra/pages/164/Régime-des-études">Régime des études  </a></li>
+                                            <li><a href="fra/pages/168/Condition-de-passage">Condition de passage</a></li>
+                                            <li><a href="fra/pages/165/Réglementation-interne">Réglementation interne</a></li>
+                                            <li><a href="fra/pages/166/Réglementation-des-examens">Réglementation des examens</a></li>
+                                            <li><a href="fra/pages/170/Programmes">Programmes</a></li>
+                                            <li><a href="fra/pages/171/Lauréats">Lauréats</a></li>
+                    
+                </ul>
+                            <ul>
+
+                    <li class="parent">
+                        <a href="javascripts:void(0)" class="firstWord couleur_eprims">
+                            <span class="highlightedWord">Etudiant</span> </a>
+                    </li>
+                                            <li><a href="fra/pages/172/Clubs">Clubs</a></li>
+                                            <li><a href="fra/pages/176/Fiches-de-candidature">Fiches de candidature</a></li>
+                                            <li><a href="fra/articles/categorie/p/1/6/manifestations">Manifestations</a></li>
+                                            <li><a href="fra/pages/173/Activités-sportives">Activités Sportives</a></li>
+                                            <li><a href="fra/pages/174/Activités-culturelles">Activités culturelles</a></li>
+                                            <li><a href="fra/pages/175/Communiqué">Concours Nationaux</a></li>
+                    
+                </ul>
+            
+        </div>
     </div>
-  </footer><!-- End Footer -->
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Vendor JS Files -->
-  <script src="{{ asset('import/assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
-  <script src="{{ asset('import/assets/vendor/glightbox/js/glightbox.min.js')}}"></script>
-  <script src="{{ asset('import/assets/vendor/isotope-layout/isotope.pkgd.min.js')}}"></script>
-  <script src="{{ asset('import/assets/vendor/swiper/swiper-bundle.min.js')}}"></script>
-  <script src="{{ asset('import/assets/vendor/php-email-form/validate.js')}}"></script>
 
-  <!-- Template Main JS File -->
-  <script src="{{ asset('import/assets/js/main.js')}}"></script>
+    <div class="container-fluid">
+        <div class="footer-bottom mentionsObligatoires">
+            <div class="region region-footer-bottom">
+                <div id="block-pieddepage">
 
+                                        <ul class="in_region_footer_bottom menu menu--footer nav">
+                                                <li class="">
+                            <a href="fra/home">Accueil</a>
+                        </li>
+                                                <li class="">
+                            <a href="fra/contact">Contact</a>
+                        </li>
+                                                <li class="">
+                            <a href="fra/galerie/">Photos</a>
+                        </li>
+                                                <li class="">
+                            <a href="fra/links">Liens utiles</a>
+                        </li>
+                        
+                        <li class="last">
+                            <span class="navbar-text">© 2024 IPEIGB</span>
+                        </li>
+                    </ul>
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</footer>
 </body>
 
 </html>
