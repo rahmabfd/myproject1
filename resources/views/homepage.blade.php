@@ -69,7 +69,7 @@
 
       <h1 class="logo me-auto"><a href="index.html"></a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
-       <a href="index.html" class="logo me-auto"><img src="{{ asset('import/assets/img/logo2.jpeg')}}" alt="" class="img-fluid"></a>
+       <a href="homepage" class="logo me-auto"><img src="{{ asset('import/assets/img/logo2.jpeg')}}" alt="" class="img-fluid"></a>
 
       <nav id="navbar" class="navbar">
         <ul>
@@ -135,7 +135,7 @@
            
             </ul>
           </li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li><a class="nav-link scrollto" href="contact">Contact</a></li>
           
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -151,7 +151,7 @@
       <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
 
       <div class="carousel-inner" role="listbox">
-
+     
         <!-- Slide 1 -->
         <div class="carousel-item active" style="background-image: url(import/assets/img/nuit.jpg)">
           <div class="carousel-container">
@@ -200,16 +200,28 @@
 
   <main id="main">
 
-    <!-- ======= Featured Services Section ======= -->
+    <!-- ======= news Section ======= -->
     <section id="featured-services" class="featured-services section-bg">
       <div class="container">
-
+      <div class="view-header">
+                <h2 class="block-title">À <b>la Une</b></h2>
+            </div>
         <div class="row no-gutters">
           <div class="col-lg-4 col-md-6">
             <div class="icon-box">
               <div class="icon"><i class="bi bi-laptop"></i></div>
-              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+              <article>
+                        <a href="fra/articles/1010/رزنامة-الإختبارات-للمناظرات-الوطنیة-للدّخول-إلى-مراحل-تكوین-المھندسین-دورة-2024-">
+                            <img src="useruploads/articles_thumbs/517163683460_09_59_06.png" class="thumbnail__actualites" alt="رزنامة الإختبارات للمناظرات الوطنیة للدّخول إلى مراحل تكوین المھندسین دورة 2024 "></a>
+                        <div class="actu gabSmallArticle  couleur_eprims">
+                            <div class="etiquetteSupp">
+                                <span class="type"><a href="fra/articles/1010/رزنامة-الإختبارات-للمناظرات-الوطنیة-للدّخول-إلى-مراحل-تكوین-المھندسین-دورة-2024-">Actualités</a></span>
+                                <span class="datePost">22-05-2024</span>
+                            </div>
+                            <h3 class="actu_titre"><a href="fra/articles/1010/رزنامة-الإختبارات-للمناظرات-الوطنیة-للدّخول-إلى-مراحل-تكوین-المھندسین-دورة-2024-"><img alt="" src="https://ipeim.rnu.tn/images/new_icon.gif" style="width:auto;height:auto">  رزنامة الإختبارات للمناظرات الوطنیة للدّخول إلى مراحل تكوین المھندسین دورة 2024 </a></h3>
+
+                        </div>
+                    </article>
             </div>
           </div>
           <div class="col-lg-4 col-md-6">
@@ -370,9 +382,9 @@
    
 
     <!-- ======= statistics Section ======= -->
-    
-    <div class="home-box institut_detailBG" data-site-block="true" data-site-block-id="statistics" data-site-block-title="Statistiques">
     <div class="wrapper">
+    <div class="home-box institut_detailBG" data-site-block="true" data-site-block-id="statistics" data-site-block-title="Statistiques">
+    
         <div class="home-statistics"   style="background-image: url(import/assets/img/bg-stat.png)"  data-sr-id="2" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; ">
     <h2 class="home-title">IPEIGB en chiffres</h2>
 
@@ -404,6 +416,7 @@
    
 
     <!-- ======= maps Section ======= -->
+
     <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -411,18 +424,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
  <!-- ======= Contact Section ======= -->
+ 
  <div class="mapHome">
     <div>
-    https://www.google.com/maps/place/embed?pb=!4m6!3m5!1s0x12556e4037f61087:0xf1f62cd467db84da!8m2!3d33.8500766!4d10.1052818!16s%2Fg%2F120zjg5k?entry=ttu
+    <div class="wrapper">
 <div id="home_map">
 
 <div class="map_canvas">
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26485.55687960017!2d10.078610514739122!3d33.864429816376465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12556fc62d070381%3A0x1fe4ab141249fc2e!2sSchool%20Preparatory!5e0!3m2!1sen!2stn!4v1721764570368!5m2!1sen!2stn" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</div>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3313.535931854149!2d10.102706875308566!3d33.850076573233686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12556e4037f61087%3A0xf1f62cd467db84da!2sInstitut%20Pr%C3%A9paratoire%20aux%20Etudes%20d&#39;Ing%C3%A9nieurs%20de%20Gab%C3%A9s!5e0!3m2!1sfr!2stn!4v1721938862119!5m2!1sfr!2stn" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
 <div class="wrapper position-relative">
 <div id="map_contact_info" class="hide-on-mobile">
 <div id="footer_weather">
-<a class="weatherwidget-io" href="https://forecast7.com/en/34d7410d76/sfax/" data-label_1="SFAX, Tunisia" data-label_2="WEATHER" data-font="Roboto" data-icons="Climacons Animated" data-mode="Current" data-days="3" data-theme="black" data-basecolor="#fff" data-suncolor="orange" data-cloudfill="#fff" style="display: block; position: relative; height: 180px; padding: 0px; overflow: hidden; text-align: left; text-indent: -299rem;">gabes, Tunisia<iframe id="weatherwidget-io-0" class="weatherwidget-io-frame" title="Weather Widget" scrolling="no" frameborder="0" width="100%" src="https://weatherwidget.io/w/" style="display: block; position: absolute; top: 0px; height: 180px;"></iframe></a>
+<a class="weatherwidget-io" href="https://forecast7.com/en/34d7410d76/sfax/" data-label_1="GABES, Tunisia" data-label_2="WEATHER" data-font="Roboto" data-icons="Climacons Animated" data-mode="Current" data-days="3" data-theme="black" data-basecolor="#fff" data-suncolor="orange" data-cloudfill="#fff" style="display: block; position: relative; height: 180px; padding: 0px; overflow: hidden; text-align: left; text-indent: -299rem;">gabes, Tunisia<iframe id="weatherwidget-io-0" class="weatherwidget-io-frame" title="Weather Widget" scrolling="no" frameborder="0" width="100%" src="https://weatherwidget.io/w/" style="display: block; position: absolute; top: 0px; height: 180px;"></iframe></a>
 <script>
 !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
 </script>
@@ -440,7 +453,7 @@
   <!-- ======= Footer ======= -->
   <footer class="footer" role="contentinfo">
 
-    <div class="mrg150">
+    <div >
         <div class="responsive-box">
 
             <section id="block-eprims" class="block block-block-content block-block-contentded7fc6c-b108-431a-8e89-17b085e58803 clearfix">

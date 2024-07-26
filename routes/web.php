@@ -21,3 +21,11 @@ Route::get('/', function () {
 Route::get('/homepage', function () {
     return view('homepage');
 });
+//institut-motdirecteur//
+Route::get('/institut-motdirecteur', function () {
+    return view('institut-motdirecteur');
+});
+//contact//
+Route::get('/contact', function () {
+    return view('contact');
+});
